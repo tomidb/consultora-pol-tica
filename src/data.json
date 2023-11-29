@@ -1,0 +1,56 @@
+{
+  "sections": [
+    {
+      "name": "servicios",
+      "h1": "Qué hacemos",
+      "texto": ""
+    },
+    {
+      "name": "equipo",
+      "h1": "Quienes somos",
+      "texto": ""
+    },
+    {
+      "name": "trabajos",
+      "h1": "Nuestros trabajos",
+      "texto": ""
+    },
+    {
+      "name": "clientes",
+      "h1": "Nuestros clientes",
+      "texto": ""
+    },
+    {
+      "name": "contacto",
+      "h1": "Contacto",
+      "texto": ""
+    }
+  ],
+  "imageSlide": [
+    {
+      "url": "pic-1.jpg",
+      "title": "Estrategia",
+      "body": "Campañas electorales"
+    },
+    {
+      "url": "pic-2.jpg",
+      "title": "Encuestas",
+      "body": "Estudios cuantitativos y cualitativos"
+    },
+    {
+      "url": "pic-3.jpg",
+      "title": "Comunicación",
+      "body": "Prensa, redes sociales y manejo de crisis"
+    },
+    {
+      "url": "pic-4.jpg",
+      "title": "Análisis",
+      "body": "Big data, estadísticas y estudios de caso"
+    },
+    {
+      "url": "pic-5.jpg",
+      "title": "Capacitación",
+      "body": "Liderazgo, oratoria e imagen."
+    }
+  ]
+}

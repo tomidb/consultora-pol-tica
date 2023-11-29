@@ -1,0 +1,48 @@
+.hero-container .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.content h1 {
+  font-size: 64px;
+  letter-spacing: 0.3rem;
+  font-family: "Gloock", serif;
+  text-align: center;
+}
+.hero-container .content p:nth-child(1) {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero-container .content p:nth-child(2) {
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+.hero-container .button {
+  margin: 1rem 0;
+  width: 300px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: #333;
+}
+
+.hero-container .button:hover {
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--secondary-dark);
+}
+
+@media screen and (max-width: 940px) {
+  .hero-container .content p:nth-child(3) {
+    font-size: 2.6rem;
+  }
+
+  .hero-container .content p:nth-child(4) {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,21 @@
+.section-contacto {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-contacto h2 {
+  padding: 3rem;
+  font-size: 48px;
+  font-family: "Gloock", serif;
+  color: #012e38;
+}
+
+.contacto-container {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  justify-content: space-around;
+}

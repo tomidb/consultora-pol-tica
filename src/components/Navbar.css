@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #002128ce;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 8px;
+  font-family: "Gloock", serif;
+}
+
+.logo .harrison {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.logo .compol {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: lightskyblue;
+}
+
+.logo:link {
+  color: white;
+}
+
+.logo:visited {
+  color: white;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.1rem;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+.header .nav-menu a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.header .navbar img {
+  width: 250px;
+  height: auto;
+}
+
+.header .nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.header .nav-item {
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+  font-family: "DIN Pro", sans-serif;
+
+  background-image: linear-gradient(currentColor, currentColor 1px);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: 600ms cubic-bezier(0.4, 0, 0.2, 1) all;
+}
+
+.header .nav-item:hover {
+  padding-bottom: 0.2rem;
+
+  background-size: 100% 1px;
+  background-color: transparent;
+}
+
+.active-link {
+  font-weight: 900;
+  text-shadow: 0 0 6px white;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .header {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .header .navbar {
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .header .navbar img {
+    width: 150px;
+  }
+}
