@@ -52,5 +52,59 @@
       "title": "Capacitación",
       "body": "Liderazgo, oratoria e imagen."
     }
+  ],
+  "profiles": [
+    {
+      "url": "dionisio.jpg",
+      "name": "Dionisio Harrington",
+      "competences": "The Creator",
+      "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
+      "trabajos": false
+    },
+    {
+      "url": "juan.jpg",
+      "name": "Juan Maria Gear",
+      "competences": "Asesor Legal y Técnico",
+      "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
+      "trabajos": false
+    },
+    {
+      "url": "estefania.jpg",
+      "name": "Estefania Martins",
+      "competences": "Community Manager",
+      "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
+      "trabajos": false
+    },
+    {
+      "url": "raquel.jpg",
+      "name": "Raquel Oliva",
+      "competences": "Analista de Datos",
+      "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
+      "trabajos": false
+    },
+    {
+      "url": "matias.jpg",
+      "name": "Matias Stubicher",
+      "competences": "Editor de Video",
+      "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
+      "trabajos": [
+        {
+          "title": "Pritiado",
+          "url": "pritiado.jpg"
+        },
+        {
+          "title": "Un vago",
+          "url": "un-vago.jpg"
+        },
+        {
+          "title": "Pritiado",
+          "url": "pritiado.jpg"
+        },
+        {
+          "title": "Un vago",
+          "url": "un-vago.jpg"
+        }
+      ]
+    }
   ]
 }

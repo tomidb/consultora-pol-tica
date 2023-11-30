@@ -1,0 +1,25 @@
+.team-section {
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-section h2 {
+  font-size: 48px;
+  font-family: "Gloock", serif;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.team-cards-container {
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+}

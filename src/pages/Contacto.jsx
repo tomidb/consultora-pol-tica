@@ -5,9 +5,9 @@ import "./Contacto.css";
 
 export function Contacto() {
   return (
-    <section className="section-contacto">
+    <section className="contact-section">
       <h2>Ponete en contacto con nosotros</h2>
-      <div className="contacto-container">
+      <div className="contact-container">
         <ContactInfo />
         <ContactForm />
       </div>

@@ -1,31 +1,22 @@
+import "./Equipo.css";
+import { TeamCards } from "../components/TeamCards";
+import { profiles } from "../data.json";
+
 export function Equipo() {
   return (
-    <>
-      <h1>Equipo</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-    </>
+    <section className="team-section">
+      <h2>Conoce nuestro equipo</h2>
+      <div className="team-cards-container">
+        {profiles.map((profile) => (
+          <TeamCards
+            key={profile.name}
+            url={profile.url}
+            name={profile.name}
+            competences={profile.competences}
+            trabajos={profile.trabajos}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
