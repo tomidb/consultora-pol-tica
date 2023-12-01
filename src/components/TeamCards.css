@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--primary-color);
-  min-height: 460px;
+  min-height: 470px;
+  background-color: var(--primary-color);
 }
 
 .profile-card-image {
@@ -20,7 +21,6 @@
   gap: 1rem;
   align-items: center;
   padding-top: 1.5rem;
-  background-color: var(--primary-color);
 }
 
 .profile-name {
@@ -32,5 +32,45 @@
 
 .profile-competences {
   color: var(--tertiary-color);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.profile-btn-panel {
+  display: flex;
+  gap: 1rem;
+}
+
+/*  ESTILO DE BOTONES */
+
+.profile-btn {
+  display: flex;
+  cursor: pointer;
+  width: auto;
+  height: 35px;
+  padding: 10px 15px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  outline: none;
+  border-radius: 2px;
+  border: none;
+}
+
+.profile-btn:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.profile-btn-icon {
   font-size: 16px;
+  transition: transform 500ms;
+}
+
+.profile-btn:hover .profile-btn-icon {
+  transform: translate(5px);
 }

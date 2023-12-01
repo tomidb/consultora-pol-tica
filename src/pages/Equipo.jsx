@@ -13,6 +13,7 @@ export function Equipo() {
             url={profile.url}
             name={profile.name}
             competences={profile.competences}
+            biotext={profile.biotext}
             trabajos={profile.trabajos}
           />
         ))}
