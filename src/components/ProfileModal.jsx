@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./ProfileModal.css";
 import { AiFillCloseSquare } from "react-icons/ai";
 

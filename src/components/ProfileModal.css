@@ -13,7 +13,9 @@
   color: var(--primary-color);
   width: 90%;
   height: 80vh;
-  margin: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0px 0px 20px 20px;
   position: fixed;
   display: flex;
@@ -54,9 +56,6 @@
   font-size: 30px;
 }
 
-.modal-competences {
-}
-
 .biotext-container {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -64,8 +63,8 @@
 
 @media screen and (max-width: 800px) {
   .modal-container {
-    width: 340px;
-    max-width: 340px;
+    width: 320px;
+    max-width: 320px;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
@@ -76,12 +75,14 @@
   }
 
   .modal-profile-card {
+    flex-direction: column;
     overflow-y: scroll;
     width: 100%;
     gap: 20px;
   }
-  .modal-profile-card {
-    flex-direction: column;
+
+  .modal-profile-img {
+    max-width: 300px;
   }
 
   .biotext-container {
