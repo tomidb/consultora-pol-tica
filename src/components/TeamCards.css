@@ -21,6 +21,10 @@
   gap: 1rem;
   align-items: center;
   padding-top: 1.5rem;
+  overflow: hidden;
+  border-left: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .profile-name {

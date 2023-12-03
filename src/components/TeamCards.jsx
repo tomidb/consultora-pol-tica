@@ -2,18 +2,29 @@
 import "./TeamCards.css";
 import { BsArrowRight } from "react-icons/bs";
 import { ProfileModal } from "./ProfileModal";
+import { Trabajos } from "./Trabajos";
 import { useState } from "react";
 
 export function TeamCards({ url, name, competences, trabajos, biotext }) {
-  const initialDispaly = false;
-  const [modalDisplay, setModalDisplay] = useState(initialDispaly);
+  const initialDisplay = false;
+  const [modalDisplay, setModalDisplay] = useState(initialDisplay);
+  const [trabajosDisplay, setTrabajosDisplay] = useState(initialDisplay);
 
   const handleModal = () => {
     console.log("HANDLE MODAL");
-    if (modalDisplay == initialDispaly) {
+    if (modalDisplay == initialDisplay) {
       setModalDisplay(true);
     } else {
-      setModalDisplay(initialDispaly);
+      setModalDisplay(initialDisplay);
+    }
+  };
+
+  const handleTrabajos = () => {
+    console.log("HANDLE TRABAJOS");
+    if (trabajosDisplay == initialDisplay) {
+      setTrabajosDisplay(true);
+    } else {
+      setTrabajosDisplay(initialDisplay);
     }
   };
 
@@ -30,12 +41,15 @@ export function TeamCards({ url, name, competences, trabajos, biotext }) {
               <BsArrowRight className="profile-btn-icon" />
             </button>
             {trabajos ? (
-              <button className="profile-btn">
+              <button className="profile-btn" onClick={handleTrabajos}>
                 Trabajos
                 <BsArrowRight className="profile-btn-icon" />
               </button>
             ) : null}
           </div>
+          {trabajosDisplay ? (
+            <Trabajos trabajos={trabajos} handleTrabajos={handleTrabajos} />
+          ) : null}
         </div>
       </div>
       {modalDisplay ? (

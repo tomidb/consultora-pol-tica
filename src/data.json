@@ -50,7 +50,7 @@
     {
       "url": "pic-5.jpg",
       "title": "Capacitación",
-      "body": "Liderazgo, oratoria e imagen."
+      "body": "Liderazgo, oratoria e imagenn."
     }
   ],
   "profiles": [
@@ -89,20 +89,29 @@
       "biotext": "Yo soy el creador de toda esta consultora papa. Si tenes alguna duda sobre como funciona esto, me consultas a mi. No me molestes por pelotudeces. Me ocupo de las cosas serias y de relevancia para el destino de nuestra nacion. Todo lo demas podes charlarlo con alguno de mis inferiores. Mi experiencia es basta e inabarcable. No tengo intenciones de contarte mi trayectoria porque creo que los hechos hablan por si solos. Si queres triunfar trabaja conmigo y sino segui la flecha. Nos vimo",
       "trabajos": [
         {
+          "title": "un-guaso",
+          "url": "un-guaso.mp4"
+        },
+        {
+          "title": "General Paz",
+          "url": "gral-paz.mp4"
+        },
+        {
           "title": "Pritiado",
-          "url": "pritiado.jpg"
+          "url": "pritiado.mp4"
         },
         {
-          "title": "Un vago",
-          "url": "un-vago.jpg"
+          "title": "Fabre",
+          "url": "fabre.mp4"
         },
         {
-          "title": "Pritiado",
-          "url": "pritiado.jpg"
+          "title": "Miedo",
+          "url": "miedo.mp4"
         },
         {
-          "title": "Un vago",
-          "url": "un-vago.jpg"
+          "format": "video",
+          "title": "Formula",
+          "url": "fernet.mp4"
         }
       ]
     }
