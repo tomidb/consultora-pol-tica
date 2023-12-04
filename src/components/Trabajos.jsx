@@ -34,10 +34,11 @@ export function Trabajos({ trabajos }) {
             onClick={() => setWork(trabajo)}
           >
             <video
-              src={`/media/${trabajo.url}`}
+              src={`/media/${trabajo.url}#t=0.001`}
               alt={trabajo.title}
               className="trabajo-preview"
               muted
+              preload="metadata"
             />
             <p className="trabajo-title">{trabajo.title}</p>
           </SwiperSlide>
