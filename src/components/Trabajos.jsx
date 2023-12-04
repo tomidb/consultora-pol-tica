@@ -15,10 +15,10 @@ export function Trabajos({ trabajos }) {
       <Swiper
         effect={"coverflow"}
         grabCursor={false}
-        centeredSlides={true}
-        loop={false}
-        spaceBetween={0}
+        loop={true}
+        centeredSlidesBounds={true}
         slidesPerView={"auto"}
+        spaceBetween={10}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -35,10 +35,11 @@ export function Trabajos({ trabajos }) {
           >
             <video
               src={`/media/${trabajo.url}`}
-              alt={trabajo.tile}
+              alt={trabajo.title}
               className="trabajo-preview"
               muted
             />
+            <p className="trabajo-title">{trabajo.title}</p>
           </SwiperSlide>
         ))}
       </Swiper>
