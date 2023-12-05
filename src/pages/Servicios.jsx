@@ -1,31 +1,21 @@
+import "./Servicios.css";
+import { Servicio } from "../components/Servicio";
+import { servicios } from "../data.json";
+
 export function Servicios() {
   return (
-    <>
-      <h1>Servicios</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-    </>
+    <section className="services-section">
+      <h2>Conocé nuestros servicios</h2>
+      <div className="servicios-container">
+        {servicios.map((servicio) => (
+          <Servicio
+            key={crypto.randomUUID()}
+            url={servicio.url}
+            title={servicio.title}
+            description={servicio.description}
+          />
+        ))}
+      </div>
+    </section>
   );
 }

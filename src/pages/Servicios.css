@@ -1,4 +1,4 @@
-.contact-section {
+.services-section {
   margin: 0 auto;
   max-width: 100%;
   display: flex;
@@ -8,24 +8,25 @@
   padding-bottom: 3rem;
 }
 
-.contact-section h2 {
+.services-section h2 {
   padding: 4rem;
   font-size: 48px;
   font-family: "Gloock", serif;
   color: #012e38;
 }
 
-.contact-container {
+.servicios-container {
+  margin: 0 auto;
+  max-width: 100%;
   display: flex;
-  width: 100%;
-  padding-top: 1rem;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 840px) {
-  .contact-container {
-    flex-direction: column;
-    width: 90%;
-    gap: 2rem;
+  .servicios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
   }
 }
