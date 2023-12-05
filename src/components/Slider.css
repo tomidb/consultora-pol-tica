@@ -3,8 +3,9 @@
 .slider-container {
   background-color: #002128ce;
   color: #fff;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -17,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 600px;
+  width: 40%;
   position: absolute;
   z-index: 3;
   color: aliceblue;
@@ -32,13 +33,13 @@
 }
 
 .description h1 {
-  font-size: 64px;
+  font-size: 4rem;
   letter-spacing: 0.3rem;
   font-family: "Gloock", serif;
 }
 
 .description p {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: italic;
 }
 
@@ -47,11 +48,12 @@
 }
 
 .carousel-boullt span {
-  width: 45px;
-  height: 12px;
+  display: none;
+  width: 1rem;
+  height: 1rem;
   background-color: rgb(179, 178, 176);
   margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
   box-shadow: 3px 2px 2px rgba(73, 72, 72, 0.338);
 }
@@ -61,7 +63,7 @@
 }
 
 .transparent-background {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: 2;
@@ -69,4 +71,42 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   background-color: #002128ce;
+}
+
+@media screen and (max-width: 800px) {
+  .description {
+    width: 90%;
+    top: 45%;
+    left: 15%;
+  }
+
+  .description h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .description p {
+    font-size: 1.05rem;
+    font-style: italic;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description {
+    width: 100%;
+    top: 50%;
+    left: 10%;
+  }
+
+  .description h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+  }
+  .description-info {
+    width: 60%;
+  }
+  .description p {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
 }

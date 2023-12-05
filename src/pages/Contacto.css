@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .contact-section h2 {
@@ -19,4 +20,12 @@
   width: 100%;
   padding-top: 1rem;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 840px) {
+  .contact-container {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+  }
 }

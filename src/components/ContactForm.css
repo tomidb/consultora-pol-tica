@@ -5,6 +5,11 @@
   color: white;
 }
 
+.form h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  padding-bottom: 0.8rem;
+}
 .form input[type="text"],
 input[type="email"],
 .form textarea {

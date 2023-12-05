@@ -6,7 +6,10 @@ import "./Navbar.css";
 
 export function Navbar() {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    setColor(true);
+  };
 
   const [color, setColor] = useState(false);
   const changeColor = () => {
@@ -19,7 +22,9 @@ export function Navbar() {
 
   window.addEventListener("scroll", changeColor);
 
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => {
+    setClick(false);
+  };
 
   return (
     <div className={color ? "header header-bg" : "header  "}>

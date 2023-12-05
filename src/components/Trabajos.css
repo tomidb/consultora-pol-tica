@@ -42,6 +42,7 @@
   font-size: 14px;
   color: white;
   background-color: var(--overlay);
+  cursor: pointer;
 }
 
 .popup-media {

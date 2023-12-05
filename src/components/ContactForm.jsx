@@ -20,6 +20,7 @@ export function ContactForm() {
 
   return (
     <form ref={refForm} action="" onSubmit={handleSubmit} className="form">
+      <h3>Envianos un correo</h3>
       <input type="text" name="name" placeholder="Nombre" required />
       <input type="email" name="email" placeholder="Email" required />
       <textarea
