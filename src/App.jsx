@@ -5,8 +5,9 @@ import { Contacto } from "./pages/Contacto";
 import { Header } from "./components/Header";
 import { Servicios } from "./pages/Servicios";
 import { Clientes } from "./pages/Clientes";
-import { Trabajos } from "./pages/Trabajos";
+import { Portfolio } from "./pages/Portfolio";
 import { Equipo } from "./pages/Equipo";
+
 import { Error404 } from "./pages/Error404";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/equipo" element={<Equipo />} />
-            <Route path="/trabajos" element={<Trabajos />} />
+            <Route path="/trabajos" element={<Portfolio />} />
             <Route path="/clientes" element={<Clientes />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="*" element={<Error404 />} />
