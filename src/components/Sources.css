@@ -1,0 +1,56 @@
+.source-card {
+  display: flex;
+  width: 350px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.source-info {
+  width: 35%;
+  background-color: rgb(206, 205, 205);
+}
+
+.source-info p {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  color: var(--primary-color);
+}
+
+.vid-container {
+  width: 65%;
+  height: 150px;
+  overflow: hidden;
+  transition: all 500ms;
+  cursor: pointer;
+  position: relative;
+}
+
+.ver-video {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.vid-container:hover .ver-video {
+  display: block;
+}
+.source-vid {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  justify-content: center;
+  height: 150px;
+  border-radius: 0px 3px 3px 0px;
+  transition: all 1s;
+}
+
+.vid-container:hover .source-vid {
+  transform: scale(1.1);
+}
