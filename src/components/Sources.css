@@ -1,9 +1,10 @@
 .source-card {
   display: flex;
-  width: 350px;
+  width: 450px;
   height: 150px;
   overflow: hidden;
   border-radius: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .source-info {
@@ -44,8 +45,8 @@
 }
 .source-vid {
   aspect-ratio: 3/2;
+  width: 100%;
   object-fit: cover;
-  justify-content: center;
   height: 150px;
   border-radius: 0px 3px 3px 0px;
   transition: all 1s;
@@ -53,4 +54,14 @@
 
 .vid-container:hover .source-vid {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 640px) {
+  .source-card {
+    width: 95vw;
+  }
+
+  .vid-container {
+    border-radius: 0px 3px 3px 0px;
+  }
 }
