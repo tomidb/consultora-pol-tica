@@ -1,5 +1,6 @@
 import "./Sources.css";
 import { servicios } from "../data.json";
+import { SourceModal } from "./SourceModal";
 import { MdPlayCircleFilled } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import { useState } from "react";
@@ -7,6 +8,12 @@ import { useState } from "react";
 export function Sources({ contentCategory }) {
   const [recurso, setRecurso] = useState(null);
   console.log(recurso);
+  const initialDisplay = null;
+  const [modalSource, setModalSource] = useState(initialDisplay);
+
+  const handleModal = () => {
+    setModalSource(initialDisplay);
+  };
 
   const servicio = servicios.find(
     (servicio) => servicio.title === contentCategory
@@ -20,7 +27,10 @@ export function Sources({ contentCategory }) {
             <div key={crypto.randomUUID()} className="source-card">
               <div className="source-info">
                 <p>{source.title}</p>
-                <button className="info-btn">
+                <button
+                  className="info-btn"
+                  onClick={() => setModalSource(source)}
+                >
                   <FaPlus className="info-btn-icon" />
                   Info
                 </button>
@@ -50,6 +60,19 @@ export function Sources({ contentCategory }) {
           <video src={`/media/${recurso.url}`} muted autoPlay controls />
         ) : null}
       </div>
+
+      {modalSource ? (
+        <SourceModal
+          title={modalSource.title}
+          cliente={modalSource.cliente}
+          tipo={modalSource.tipo}
+          contexto={modalSource.contexto}
+          medios={modalSource.medios}
+          trabajo={modalSource.trabajo}
+          detalle={modalSource.detalle}
+          handleModal={handleModal}
+        />
+      ) : null}
     </>
   );
 }

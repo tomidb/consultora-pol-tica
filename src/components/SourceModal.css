@@ -1,0 +1,91 @@
+.source-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  z-index: 10;
+}
+
+.source-modal-container {
+  background-color: white;
+  color: var(--primary-color);
+  width: 90%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 0px 20px 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.source-modal-close-icon {
+  align-self: end;
+}
+
+.source-modal-profile-card {
+  display: flex;
+  overflow: hidden;
+  padding-right: 20px;
+  height: 100%;
+  gap: 40px;
+}
+
+.source-modal-profile-img {
+  filter: grayscale(100);
+  max-width: 320px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.source-modal-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.source-modal-profile-info h3 {
+  font-family: "Gloock", serif;
+  padding-top: 1rem;
+  font-size: 30px;
+}
+
+.source-biotext-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+  .source-modal-container {
+    width: 320px;
+    max-width: 320px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .source-modal-profile-card {
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .source-modal-profile-img {
+    max-width: 300px;
+  }
+
+  .source-biotext-container {
+    overflow-y: auto;
+  }
+}
