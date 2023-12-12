@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./TeamCards.css";
 import { BsArrowRight } from "react-icons/bs";
+
 import { ProfileModal } from "./ProfileModal";
 import { Trabajos } from "./Trabajos";
 import { useState } from "react";
