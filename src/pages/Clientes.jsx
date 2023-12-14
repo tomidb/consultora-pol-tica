@@ -1,31 +1,20 @@
+import "./Clientes.css";
+import { clientes } from "../data.json";
+
 export function Clientes() {
   return (
-    <>
-      <h1>Clientes</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui nobis
-        voluptates accusantium distinctio, doloribus dolorum! Aliquam explicabo
-        accusamus amet est deserunt a laudantium quaerat eveniet? Porro
-        recusandae nulla suscipit.
-      </p>
-    </>
+    <section className="clientes-section">
+      <h2>Quienes trabajan con nosotros</h2>
+      <div className="clientes-container">
+        {clientes.map((cliente) => (
+          <img
+            key={crypto.randomUUID()}
+            className="cliente-img"
+            src={`/media/${cliente.url}`}
+            alt={cliente.alt}
+          />
+        ))}
+      </div>
+    </section>
   );
 }

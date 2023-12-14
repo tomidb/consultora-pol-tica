@@ -27,7 +27,7 @@ export function Header() {
   };
 
   return (
-    <header>
+    <header className="header-real">
       <Navbar />
       {home ? <Slider /> : <Hero />}
     </header>

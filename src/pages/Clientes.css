@@ -1,0 +1,29 @@
+.clientes-section {
+  display: flex;
+  max-width: 100vw;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.clientes-section h2 {
+  padding: 4rem;
+  font-size: 48px;
+  font-family: "Gloock", serif;
+  color: #012e38;
+}
+
+.clientes-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.cliente-img {
+  width: 100px;
+  height: 100px;
+}

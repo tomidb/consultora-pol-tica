@@ -306,5 +306,39 @@
         }
       ]
     }
+  ],
+  "clientes": [
+    {
+      "alt": "concejo-deliberante-rio-grande",
+      "url": "concejo-deliberante-rio-grande.jpg"
+    },
+    {
+      "alt": "diputados",
+      "url": "diputados.jpg"
+    },
+    {
+      "alt": "empleados-de-comercio",
+      "url": "empleados-de-comercio.jpg"
+    },
+    {
+      "alt": "municipalidad-rio-grande",
+      "url": "municipalidad-rio-grande.jpg"
+    },
+    {
+      "alt": "partido-justicialista",
+      "url": "partido-justicialista.jpg"
+    },
+    {
+      "alt": "partido-liberal",
+      "url": "partido-liberal.jpg"
+    },
+    {
+      "alt": "radicalismo",
+      "url": "radicalismo.jpg"
+    },
+    {
+      "alt": "senado",
+      "url": "senado.jpg"
+    }
   ]
 }

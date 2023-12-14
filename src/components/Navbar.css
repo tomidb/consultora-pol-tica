@@ -1,7 +1,8 @@
 .header {
   position: fixed;
   height: 90px;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   top: 0;
   left: 0;
   z-index: 4;
@@ -12,6 +13,9 @@
 }
 
 .header-bg {
+  width: 100vw;
+  overflow: hidden;
+  max-width: 100vw;
   background-color: #002128ce;
 }
 
