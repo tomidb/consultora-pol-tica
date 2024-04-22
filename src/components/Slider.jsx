@@ -26,7 +26,7 @@ export function Slider() {
   const goToNext = (currentState) => {
     setCurrentState(currentState);
   };
-  console.log(imageSlide);
+
   return (
     <>
       <div className="slider-container">
