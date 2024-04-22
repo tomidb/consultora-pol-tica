@@ -7,8 +7,8 @@
 }
 
 .service-img-container {
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 280px;
+  max-height: 280px;
   justify-content: center;
   overflow: hidden;
   position: relative;
